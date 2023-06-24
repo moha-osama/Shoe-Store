@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import pImage from "../public/assets/assets/p1.png";
+import pImage from "../public/p1.png";
 
 function ProductCard() {
   const id = 12;
