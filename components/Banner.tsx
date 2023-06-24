@@ -5,9 +5,9 @@ import { BiArrowBack } from "react-icons/bi";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
-import img1 from "../public/assets/assets/slide-1.png";
-import img2 from "../public/assets/assets/slide-2.png";
-import img3 from "../public/assets/assets/slide-3.png";
+import img1 from "../public/slide-1.png";
+import img2 from "../public/slide-2.png";
+import img3 from "../public/slide-3.png";
 
 type Slides = {
   img: any;
@@ -55,9 +55,9 @@ function Banner() {
           </div>
         ))}
       </Carousel>
-      <div className="px-[15px] md:px-[40px] py-[10px] md:py-[25px] font-oswald bg-white absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[15px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">
+      <h1 className="px-[15px] md:px-[40px] py-[10px] md:py-[25px] font-oswald bg-white absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[15px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">
         Shop now
-      </div>
+      </h1>
     </div>
   );
 }

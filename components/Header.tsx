@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import useScroll from "@/hooks/use-scroll";
 import Image from "next/image";
-import logo from "../public/assets/assets/logo.svg";
+import logo from "../public/logo.svg";
 import Link from "next/link";
 import Menu from "./Menu";
 import MobileMenu from "./MobileMenu";
@@ -42,17 +42,16 @@ function Header() {
           />
         )}
         <div className="flex items-center gap-2 text-black">
-          {/*Icon*/}
           <div className="icon-container">
             <IoMdHeartEmpty className="text-[15px] md:text-[20px]" />
             <div className="icon-text">5</div>
           </div>
-          {/*Icon*/}
           <div className="icon-container">
-            <BsCart className="text-[15px] md:text-[20px]" />
+            <Link href="/cart">
+              <BsCart className="text-[15px] md:text-[20px]" />
+            </Link>
             <div className="icon-text">5</div>
           </div>
-          {/*Mobile Menu*/}
           <div
             className="icon-container -mr-2 md:hidden"
             onClick={() => setMobileMenu(!mobileMenu)}
